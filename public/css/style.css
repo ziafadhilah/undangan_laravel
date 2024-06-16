@@ -1,0 +1,569 @@
+:root {
+    --pink: #f14e95;
+    --yellow: #f3c63d;
+    --blue: #5bc7d5;
+    --bg: #0a0a0a;
+    --shadow: 0 2px rgb(0 0 0/0.5);
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: "Concert One", cursive;
+    min-height: 2000px;
+    background-color: white;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/img/hands_bg.JPG);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: grayscale(100%);
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    /* background-color: var(--bg); */
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+    text-shadow: var(--shadow);
+}
+
+.hero h1 {
+    font-family: "Satisfy", cursive;
+    font-size: 5rem;
+    color: #17a2b8;
+}
+
+.hero h2 {
+    font-family: "Satisfy", cursive;
+    font-size: 4.5rem;
+    color: #17a2b8;
+}
+
+.hero h4 {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.6rem;
+}
+
+.hero p {
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+}
+
+.hero a {
+    color: white;
+    background-color: #17a2b8;
+}
+
+.hero a:hover {
+    background-color: white;
+    color: #333333;
+}
+
+.home {
+    background-color: #17a2b8;
+    min-height: 100vh;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.home h2,
+.story h2 {
+    color: #333333;
+    font-family: "Dancing Script", cursive;
+    font-size: 4.5rem;
+}
+
+.home h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    font-size: 1.1rem;
+    color: #f0f0f0;
+}
+
+.home .couple {
+    margin-top: 30px;
+}
+
+.home .couple h3 {
+    font-family: "Dancing Script", cursive;
+    color: black;
+    font-size: 2.4rem;
+}
+
+.home .couple img {
+    width: 100%;
+}
+
+.home .heart {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+}
+
+.home .heart i {
+    margin: auto;
+    color: red;
+}
+
+.info {
+    background-color: transparent;
+    color: black;
+    /* padding-top: 10rem; */
+    padding-bottom: 8rem;
+}
+
+.info h2 {
+    color: var(--blue);
+    font-family: "Dancing Script", cursive;
+    font-size: 4.5rem;
+}
+
+.info a {
+    color: white;
+    background-color: var(--blue);
+}
+
+.info a:hover {
+    color: white;
+    background-color: var(--pink);
+}
+
+.info .alamat {
+    font-size: 1.1rem;
+    color: black;
+}
+
+.info .description {
+    font-size: 1rem;
+    font-weight: 300;
+    color: black;
+}
+
+.info .card {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: black !important;
+    border: 1px solid #5bc7d5;
+}
+
+.info .card-header {
+    border-bottom: 1px solid #5bc7d5;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    background-color: #5bc7d5;
+}
+
+.info .card-body {
+    font-size: 1rem;
+}
+
+.info .card-footer {
+    border-top: 1px solid #5bc7d5;
+    font-size: 0.9rem;
+    font-weight: 300;
+    background-color: #5bc7d5;
+    color: white;
+}
+
+.svg-atas {
+    margin-top: -11rem;
+}
+
+.format-svg {
+    margin-top: -1rem;
+}
+
+.format-svg2 {
+    margin-top: 0rem;
+    background-color: #17a2b8;
+}
+
+.simply-countdown .simply-section {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.story {
+    background-color: #17a2b8;
+    min-height: 100vh;
+    margin-top: -1rem;
+    padding-top: 5rem;
+    /* padding-bottom: 5rem; */
+}
+
+.story p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+}
+
+.timeline {
+    list-style: none;
+    padding: 1.4rem 0;
+    margin-top: 1rem;
+    position: relative;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.timeline::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 1px;
+    background-color: #ccc;
+    left: 50%;
+}
+
+.timeline li {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.timeline li::before,
+.timeline li:after {
+    content: "";
+    display: table;
+}
+
+.timeline li::after {
+    clear: both;
+}
+
+.timeline li .timeline-img {
+    width: 160px;
+    height: 160px;
+    background-color: #ccc;
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.timeline li .timeline-panel {
+    width: 40%;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    position: relative;
+    border-radius: 5px;
+}
+
+.timeline li .timeline-panel::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    top: 80px;
+    right: -15px;
+}
+
+.timeline li .timeline-panel::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #17a2b8;
+    border-right: 0 solid #17a2b8;
+    border-bottom: 14px solid transparent;
+    top: 81px;
+    right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+    float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+}
+
+.timeline-body p {
+    text-align: justify;
+    word-spacing: 0.1em;
+}
+
+.galeri {
+    margin-bottom: 2rem;
+}
+
+.galeri h2 {
+    color: var(--blue);
+    font-size: 4.5rem;
+    font-family: "Dancing Script", cursive;
+    margin-bottom: 2rem;
+}
+
+.ucapan {
+    min-height: 100vh;
+}
+
+.ucapan h2 {
+    color: var(--blue);
+    font-family: "Dancing Script", cursive;
+    font-size: 4.5rem;
+    /* margin-bottom: 2rem; */
+}
+
+.svg-gift {
+    margin-top: -2rem;
+}
+
+.gift {
+    background-color: #17a2b8;
+    min-height: 50vh;
+    margin-top: -2rem;
+}
+
+.gift h2 {
+    color: black;
+    font-family: "Dancing Script", cursive;
+    font-size: 4.5rem;
+}
+
+.card-atm {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #ffffff 25%, #e0e0e0);
+    border: none;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-atm::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+        to top right,
+        rgba(255, 255, 255, 0.1),
+        rgba(0, 0, 0, 0.1)
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+.card-atm .card-body {
+    position: relative;
+    z-index: 2;
+}
+
+.card-atm .card-footer {
+    position: relative;
+    z-index: 2;
+    border-top: none;
+    background: none;
+}
+
+.card-atm img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-outline-dark {
+    border-color: #333;
+    color: #333;
+}
+
+.btn-outline-dark:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Media Query */
+
+/* Extra Large */
+
+@media (max-width: 1200px) {
+    .home .heart {
+        transform: translateX(-50%) translateY(100px);
+    }
+    html {
+        font-size: 100%;
+    }
+    .svg-atas {
+        margin-top: -8rem;
+    }
+
+    .home {
+        margin-top: -2rem;
+    }
+
+    .hero h2 {
+        font-family: "Satisfy", cursive;
+        font-size: 4.5rem;
+        color: #17a2b8;
+    }
+}
+
+/* Laptop */
+
+@media (max-width: 992px) {
+    html {
+        font-size: 100%;
+    }
+
+    /* .hero h2 {
+        font-family: "Satisfy", cursive;
+        font-size: 3rem;
+        color: #17a2b8;
+    } */
+
+    .simply-countdown > .simply-section {
+        padding: 50px;
+    }
+
+    .home .heart {
+        display: none;
+    }
+
+    .timeline::before {
+        left: 60px;
+    }
+
+    .timeline li .timeline-img {
+        left: 15px;
+        margin-left: 45px;
+        top: 16px;
+    }
+
+    .timeline li .timeline-panel {
+        width: calc((100% - 200px));
+        float: right;
+    }
+
+    .timeline li .timeline-panel::before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+
+    .timeline li .timeline-panel::after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -13px;
+        right: auto;
+    }
+
+    .svg-atas {
+        margin-top: -6rem;
+    }
+
+    .home {
+        margin-top: -2rem;
+    }
+}
+
+/* Tab */
+
+@media (max-width: 768) {
+    html {
+        font-size: 100%;
+    }
+
+    /* .hero h2 {
+        font-family: "Satisfy", cursive;
+        font-size: 3.5rem;
+        color: #17a2b8;
+    } */
+
+    .simply-countdown > .simply-section {
+        padding: 40px;
+        margin: 5px;
+    }
+
+    .svg-atas {
+        margin-top: -5rem;
+    }
+
+    .home {
+        margin-top: -2rem;
+    }
+}
+
+/* Phone */
+
+@media (max-width: 576px) {
+    html {
+        font-size: 90%;
+    }
+
+    .hero h2 {
+        font-family: "Satisfy", cursive;
+        font-size: 3rem;
+        color: #17a2b8;
+    }
+
+    .simply-countdown > .simply-section {
+        padding: 35px;
+        margin: 2.5px;
+    }
+
+    .timeline li .timeline-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .timeline li .timeline-panel {
+        width: 60%;
+        transform: translateX(-20px);
+    }
+
+    .timeline li .timeline-panel::before {
+        top: 30px;
+    }
+    .timeline li .timeline-panel::after {
+        top: 31px;
+    }
+
+    .svg-atas {
+        margin-top: -5rem;
+    }
+
+    .home {
+        margin-top: -2rem;
+    }
+}
