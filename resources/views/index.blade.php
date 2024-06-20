@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta property="og:image" content="/assets/images/IMG-20240602-WA0003.jpg" />
-    <title>Zia & Putri</title>
+    <meta property="og:image" content="/assets/img/IMG-20240602-WA0003.jpg" />
+    <title>Putri & Zia Wedding</title>
     <link rel="icon" type="image/png" href="/assets/img/IMG-20240602-WA0003.jpg">
     <!-- Bootstrap 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -51,11 +51,8 @@
         class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white section">
         <main data-bs-spy="scroll" data-bs-target="#navbar-menus" data-bs-root-margin="0px 0px -40%"
             data-bs-smooth-scroll="true" tabindex="0">
-            <h2>بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h2>
             <h4>Undangan Pernikahan</h4>
-            <h1>Zia & Putri</h1>
-            <!-- <p>Akan melangsungkan pernikahan dalam :</p> -->
-            <!-- <div class="simply-countdown simply-section"></div> -->
+            <h1>Putri & Zia</h1>
             <div class="container mt-5">
                 <h4 class="mt-1">Kepada Bapak/Ibu/Saudara/i,</h4>
                 <span id="recipient-name" style="text-transform: uppercase"> </span>
@@ -113,7 +110,7 @@
                         <div class="col-8">
                             <h3>Muhammadzia Fadhilah Ramdhani, S.T</h3>
                             <p>
-                                Anak pertama dari tiga bersaudara <br />Bpk. Achdijat Supriady
+                                Anak pertama dari tiga bersaudara <br />Bpk. Achdijat Supriady, S.T., Gr.
                                 <br />& <br />
                                 Ibu Tuti Mardiati
                             </p>
@@ -178,7 +175,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-md-6">
                                     <i class="bi bi-clock d-block"></i>
-                                    <span>10.00 WIB - 14.00 WIB</span>
+                                    <span>11.00 WIB - 14.00 WIB</span>
                                 </div>
                                 <div class="col-md-6">
                                     <i class="bi bi-calendar3 d-block"></i>
@@ -309,17 +306,17 @@
                                     class="img-fluid w-100" />
                             </div>
                             <div class="col-md-6 col-6">
-                                <img src="assets/img/IMG_2538.JPG" alt="" class="img-fluid w-100" />
+                                <img src="assets/img/IMG_2538.jpg" alt="" class="img-fluid w-100" />
                             </div>
                         </div>
                         <div id="carouselExampleAutoplaying" class="carousel slide mb-4" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/img/IMG-20240602-WA0004.jpg" class="d-block w-100"
+                                    <img src="assets/img/IMG-20240602-WA0004.jpg" class="d-block w-100 img-fluid"
                                         alt="" />
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="assets/img/IMG-20240602-WA0007.JPG" class="d-block img-fluid"
+                                    <img src="assets/img/IMG-20240602-WA0007.jpg" class="d-block img-fluid"
                                         alt="" />
                                 </div>
                                 <div class="carousel-item">
@@ -352,6 +349,19 @@
         </div>
     </section>
 
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="modalImage" class="img-fluid" alt="Zoomed Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-gift section">
         <path fill="#17a2b8" fill-opacity="1"
             d="M0,96L60,90.7C120,85,240,75,360,80C480,85,600,107,720,128C840,149,960,171,1080,160C1200,149,1320,107,1380,85.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
@@ -363,6 +373,11 @@
           <div class="row justify-content-center">
               <div class="col-md-12 col-12 text-center">
                   <h2>Wedding Gift</h2>
+              </div>
+          </div>
+          <div class="row justify-content-center">
+              <div class="col-md-12 col-12 text-center">
+                  <span style="color: white">Tanpa mengurangi rasa hormat, bagi keluarga, sahabat, dan rekan <br>yang ingin memberikan tanda kasih untuk kami, dapat melalui:</span>
               </div>
           </div>
           <div class="row justify-content-center mt-4">
@@ -459,7 +474,7 @@
     </section>
 
     <audio id="background-music"
-        src="assets/music/kesempurnaan-cinta.mp3" loop autoplay muted></audio>
+        src="assets/music/kesempurnaan-cinta.mp3" loop autoplay></audio>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
@@ -485,6 +500,16 @@
                         alert(response.responseJSON.message);
                     }
                 });
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('img').on('click', function() {
+                var src = $(this).attr('src');
+                $('#modalImage').attr('src', src);
+                $('#imageModal').modal('show');
             });
         });
     </script>

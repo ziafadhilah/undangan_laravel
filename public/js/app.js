@@ -29,11 +29,11 @@ simplyCountdown(".simply-countdown", {
 
 // audio
 
-// window.addEventListener("click", function () {
-//   var audio = document.getElementById("background-music");
-//   audio.muted = false;
-//   audio.play();
-// });
+window.addEventListener("click", function () {
+    var audio = document.getElementById("background-music");
+    audio.muted = false;
+    audio.play();
+});
 
 function copyToClipboard(elementId) {
     // Buat elemen input temporer
